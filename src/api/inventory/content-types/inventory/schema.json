@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventories",
+  "info": {
+    "singularName": "inventory",
+    "pluralName": "inventories",
+    "displayName": "inventory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "isNeeded": {
+      "type": "boolean",
+      "default": false
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "isStocked": {
+      "type": "boolean"
+    },
+    "frequency": {
+      "type": "integer"
+    }
+  }
+}

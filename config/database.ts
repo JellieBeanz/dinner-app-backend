@@ -7,7 +7,7 @@ export default ({ env }: { env: {
     client: 'postgres',
     connection: {
       connectionString: env('DATABASE_URL'), 
-      ssl: env.bool('DATABASE_SSL', false), // Ensure this is set to false
+      ssl: env.bool('DATABASE_SSL'), // Ensure this is set to false
     },
   },
 });

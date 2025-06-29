@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_schedules",
+  "info": {
+    "singularName": "food-schedule",
+    "pluralName": "food-schedules",
+    "displayName": "food-schedule"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "recipe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::recipe.recipe"
+    }
+  }
+}

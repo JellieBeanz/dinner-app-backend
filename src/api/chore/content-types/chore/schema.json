@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chores",
+  "info": {
+    "singularName": "chore",
+    "pluralName": "chores",
+    "displayName": "Chore"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "isCompleted": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
